@@ -25,10 +25,10 @@
     
             <form>
                 <label for="heightA"> Height:</label>
-                <input type="text" id="heightA" name="heightA" placeholder="in." class="form-control">
+                <input type="text" id="height" name="height" placeholder="in." class="form-control">
 
                 <label for="baseA"> Base:</label>
-                <input type="text" id="baseA" name="baseA" placeholder="in" class="form-control">
+                <input type="text" id="base" name="base" placeholder="in" class="form-control">
             </form>
 
             <br>
@@ -44,8 +44,8 @@
 
     <script type="text/javascript">
         function tri_area() {
-            var triangleheight = document.getElementById('heightA').value;
-            var trianglebase = document.getElementById('baseA').value;
+            var triangleheight = document.getElementById('height').value;
+            var trianglebase = document.getElementById('base').value;
             var trianglearea = (trianglebase * triangleheight) /2;
             var r_area = trianglearea.toFixed(2)
             document.getElementById('t-area').innerHTML = 'The area of the triangle is: ' + r_area + '!';
